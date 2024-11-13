@@ -134,12 +134,14 @@ footer .icon{
 
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
+@media (prefers-reduced-motion: reduce) {
     @-webkit-keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
     @keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
+}
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
 
@@ -193,7 +195,7 @@ img{
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-@media screen and (min-width: 620px) {
+@media only screen and (min-width: 620px) {
     header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
@@ -227,7 +229,7 @@ img{
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     header, footer{
         background-color: var(--black);
         color: var(--white);
@@ -261,7 +263,7 @@ img{
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-@media screen and (min-width: 950px) {
+@media only screen and (min-width: 950px) {
     header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
@@ -301,7 +303,7 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-@media screen and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
     img{
         width: 500px;
         max-width: 100%; 
@@ -327,7 +329,7 @@ img{
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     header, footer{
         background-color: var(--orange);
         padding-left: 5%;
