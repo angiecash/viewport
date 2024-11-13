@@ -1,7 +1,6 @@
 /* Angela Cash */
 
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
-/* #region || CSS RESET (Used for folding code) */
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)*/
@@ -48,7 +47,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-/* #endregion || CSS Reset*/
 
 /* ----- AUTOPREFIXER FOR VS CODE WAS USED FOR VENDOR PREFIXES ----- */
 /* ---------- VARIABLES ---------- */
@@ -195,7 +193,7 @@ img{
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
@@ -263,7 +261,7 @@ img{
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-@media screen and (min-width: 889px) {
+@media screen and (min-width: 950px) {
     header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
@@ -303,17 +301,17 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-    /* img{
+    img{
         width: 300px;
-        max-width: 300px;
-    } */
+        max-width: 100%; /* 300px */
+    } 
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     header, footer{
         background-color: var(--orange);
         padding-left: 5%;
