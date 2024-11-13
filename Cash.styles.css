@@ -76,7 +76,7 @@ table {
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
 @media (prefers-color-scheme: dark) {
     body {
-        background: var(--dark-gray);
+        background-color: var(--dark-gray);
     }
 }
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
@@ -301,17 +301,19 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
+@media screen and (min-width: 1380px) {
     img{
         width: 300px;
-        max-width: 100%; /* 300px */
+        max-width: 300px; 
     } 
+}
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
     header, footer{
         background-color: var(--orange);
         padding-left: 5%;
